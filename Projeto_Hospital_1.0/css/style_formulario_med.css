@@ -1,0 +1,223 @@
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+
+.pag_formulario{ 
+    background: url("../imagem/fundo_adm_overlay.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.pag_atendente{ 
+    background: url("../imagem/imagem_fundo_atendente.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}
+
+/* CONFIGURAÇÃO PAC ALTERACADASTRO */
+
+.pag_pac{
+    background: url("../imagem/fundo_pac.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* FIM CONFIGURAÇÃO PAC ALTERACADASTRO */
+
+.form_box{
+    color: white;
+    position: absolute;
+    top: 0; /* Posição no topo da página */
+    left: 50%;
+    transform: translate(-50%, 0); /* Mantém o centro horizontal */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 50%;
+    margin-top: 30px; /* Adicione um espaçamento superior */
+
+}
+
+fieldset{
+    border: 3px solid dodgerblue;
+}
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+.form_inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+#datanasc{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#horainicio{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#horafim{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+
+#submit{
+    background: #0066ff;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    transition: background 0.5s;
+}
+#submit:hover{
+    background: #0040a1;
+}
+
+
+.conteiner_input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.input_especial {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    margin: 5px; /* Adiciona uma margem ao redor do conteúdo */
+    font-weight: bold;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+@media only screen and (max-width: 786px){
+    .form_box {
+        width: 100%;
+      }
+  
+      .input_especial{
+        margin-left: 1px;
+        margin-right: 1px;
+      }
+}
+
+.container_btn_voltar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+
+}
+
+.btn_voltar{
+    padding: 0.5rem 2rem;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 16px 0;
+    background: #0066ff;
+    transition: background 0.5s;
+}
+
+.btn_voltar:hover{
+    background: #0040a1;
+}
+
+/* EDIÇÃO FORMULARIO EDITMEDICO */
+.radio_label{
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container_radio_label {
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente ao centro */
+
+    background: rgb(55, 55, 55, 0.9);
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 0.5rem 7rem;
+    border-radius: 32px;
+}
+
+.form_inputBox {
+    text-align: center; /* Alinha o texto dentro das divs ao centro */
+    margin: 0 15px; /* Adiciona margem para separar as divs */
+}
+
+.radio_label {
+    display: block; /* Faz com que o texto e o input sejam exibidos em blocos separados */
+}
+
+.gera_senha{
+    padding: 0.5rem 2rem;
+    border-radius: 0px 0px 32px 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    background: #0066ff;
+    transition: background 0.5s;
+}
+
+.gera_senha:hover{
+    background: #0040a1;
+}
+
+/* FIM FORMULARIO EDITMEDICO */

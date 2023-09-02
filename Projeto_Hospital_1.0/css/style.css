@@ -1,0 +1,1347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* IMAGEM DA PAGINA DO ADM */
+.pag_adm{ 
+    background: url("../imagem/fundo_adm_overlay.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.pag_med{ 
+    background: url("../imagem/areamedico.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.pag_atendente{ 
+    background: url("../imagem/imagem_fundo_atendente.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}
+
+.pag_pac_login{
+    background: url("../imagem/fundo_pac_login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pag_pac{
+    background: url("../imagem/fundo_pac.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pag_pac_home{ 
+    background: #ffffff;;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.banner{
+    height: 100vh;
+    background-image: url(../imagem/bem_vindo.jpg);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 786px){
+    .banner{
+        background-size: cover;
+        background-image: url(../imagem/bem_vindo_redimen.jpg);
+        background-position: center top; /* Corrigido: centraliza a imagem no eixo horizontal */
+        
+    }
+}
+
+/* FIM IMAGEM DA PAGINA DO ADM */
+
+body{
+    background: url("../imagem/img_login3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+
+/* CONFIGURAÇÃO PARA ADMHOME */
+.wrapper-adm-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+}
+/* FIM CONFGURAÇÃO PARA ADMHOME */
+
+.wrapper-pac-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    z-index: 100;
+}
+
+/* NAV PAG_PAC */
+.nav_pac{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 0.8), transparent);
+    z-index: 100;
+}
+/* FIM NAV PAG_PAC */
+
+.nav-logo p{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* EDITAR NAV LOGO TELÃO */
+
+.nav-logo_telao p{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* FIM EDITAR NAV LOGO TELÃO */
+
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover, .active{
+    border-bottom: 2px solid #fff;
+}
+
+/* ALTERANDO CSS PARA EDITAR PERFIL*/
+.nav-menu-perfil{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+
+.nav-menu-perfil a{
+    text-decoration: none;
+    color: inherit;
+    transition: .5s;
+}
+
+.nav-menu-perfil a:hover{
+    color: aqua;
+}
+
+@media only screen and (max-width: 786px){
+    .nav-menu-perfil{
+        display: none;
+    }
+}
+
+/* ALTERANDO CSS EDITAR PERFIL FIM*/
+
+
+/* ESCONDENDO li Sair DO MENU */
+.link-sair{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+
+li a.link-sair {
+    display: block; /* Certifique-se de que o link ocupe todo o espaço horizontal no layout */
+  }
+  
+  /* Regra para telas maiores que 768 pixels */
+  @media screen and (min-width: 769px) {
+    li a.link-sair {
+      display: none; /* Oculta o link quando a tela estiver expandida */
+    }
+  }
+/* FIM ESCONDER */
+
+/* ESCONDE MENU USUARIO */
+
+.link-usuario{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+li a.link-usuario {
+    display: block; /* Certifique-se de que o link ocupe todo o espaço horizontal no layout */
+  }
+
+  @media screen and (min-width: 769px) {
+    li a.link-usuario {
+      display: none; /* Oculta o link quando a tela estiver expandida */
+    }
+  }
+
+
+/* FIM ESCONDE MENU USUARIO */
+
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.btn:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+#registerBtn{
+    margin-left: 15px;
+}
+.btn.white-btn{
+    background: rgba(255, 255, 255, 0.7);
+}
+.btn.btn.white-btn:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
+.nav-menu-btn{
+    display: none;
+}
+.form-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    height: 420px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+/* CONFIGURAÇÃO PAGINA PACIENTE REGISTRAR HOME*/
+
+.form-box_registra{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    height: 820px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+/* FIM CONFIGURAÇÃO PAGINA REGISTRAR */
+
+
+.login-container{
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+.register-container{
+    position: absolute;
+    right: -520px;
+    top: 10%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.redefinir{
+    bottom: 50%;
+}
+
+.container_radio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_radio{
+    text-align: center; /* Alinha o texto dentro das divs ao centro */
+}
+
+.top span{
+    color: #fff;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.top span a{
+    font-weight: 500;
+    color: #fff;
+    margin-left: 5px;
+}
+header{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+.two-forms{
+    display: flex;
+    gap: 10px;
+}
+.input-field{
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+.input-field:hover, .input-field:focus{
+    background: rgba(255, 255, 255, 0.25);
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
+.input-box i{
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #fff;
+}
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.submit:hover{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.two-col{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: small;
+    margin-top: 10px;
+}
+.two-col .one{
+    display: flex;
+    gap: 5px;
+}
+.two label a{
+    text-decoration: none;
+    color: #fff;
+}
+.two label a:hover{
+    text-decoration: underline;
+}
+@media only screen and (max-width: 786px){
+    .nav-button{
+        display: none;
+    }
+    .nav-menu.responsive{
+        top: 100px;
+    }
+    .nav-menu{
+        position: absolute;
+        top: -800px;
+        display: flex;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        height: 90vh;
+        backdrop-filter: blur(20px);
+        transition: .3s;
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu-btn{
+        display: block;
+    }
+    .nav-menu-btn i{
+        font-size: 25px;
+        color: #fff;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .nav-menu-btn i:hover{
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
+@media only screen and (max-width: 540px) {
+    .wrapper{
+        min-height: 20vh;
+    }
+    .form-box{
+        width: 100%;
+        height: 500px;
+    }
+    .register-container, .login-container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .register-container .two-forms{
+        gap: 1;
+    }
+}
+
+
+
+
+
+/* CARD ADMHOME */
+.container-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4); /* Adiciona a cor de fundo ao card */
+}
+
+
+main.cards {
+    display: flex;
+    padding: 32px;
+}
+
+.card-num{
+    padding-bottom: 10px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Adicionando transparência com a propriedade rgba() */
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 32px;
+  }
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon {
+    width: 100px;
+    height: 100px;
+}
+
+main.cards section.card img {
+    width: 100%;
+}
+
+main.cards section.card h3 {
+    width: 200px;
+    font-size: 25px;
+    margin: 16px 0;
+}
+
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: green;
+}
+
+main.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 16px 0;
+}
+
+main.cards section.card.contact button {
+    background: #0066ff;
+    transition: background 0.5s;
+}
+
+main.cards section.card.contact button:hover {
+    background: #0040a1;
+}
+
+main.cards section.card.shop button {
+    background: #fc5f64;
+    transition: background 0.5s;
+}
+
+main.cards section.card.shop button:hover {
+    background: #ad363a;
+}
+
+
+main.cards section.card.contact {
+    box-shadow: 20px 20px 50px -30px #DBC4FF;
+}
+main.cards section.card.shop {
+    box-shadow: 20px 20px 50px -30px #AFD6FF;
+}
+main.cards section.card.about {
+    box-shadow: 20px 20px 50px -30px #FFC1D5;
+}
+
+@media screen and (max-width: 720px) {
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button {
+        font-size: 70%;
+    }
+
+}
+
+
+/* EFEITO CARD */
+
+.cards {
+    display: flex;
+  }
+  
+  .card {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100px; /* Defina o tamanho desejado para a imagem */
+    transition: transform 0.5s; /* Adicionando transição suave para o efeito */
+  }
+  
+  /* Efeito de salto quando passar o mouse */
+  .card:hover img {
+    transform: scale(1.1); /* Aumenta a escala da imagem em 10% */
+  }
+
+/* FIM CARDS */
+
+
+  
+  /* CONTRATAR DA PAGINA ADMHOME */
+
+  .home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+.home-text{
+    max-width: 37rem;
+}
+.home-text .text-h4{
+    font-size: 1.5rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.home-text .text-h1{
+    font-size: 3.9rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    color: #fff;
+}
+.home-text p{
+    margin-bottom: 4rem;
+}
+.home-btn{
+    padding: 15px 45px;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.home-btn:hover{
+    background: #fc4c35;
+}
+.home-img img{
+    width: 400px;
+}
+
+.contrata-btn{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 16px 0;
+    background: #0066ff;
+    transition: background 0.5s;
+}
+
+.contrata-btn:hover{
+    background: #0040a1;
+}
+
+
+@media (max-width:785px) {
+
+    .home{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+    }
+    .home .text-h4{
+        font-size: 15px;
+    }
+    .home .text-h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home p{
+        font-size: 15px;
+    }
+    .home-img{
+        width: 125%;
+    }
+}
+
+/* FIM CONTRATAR */
+
+
+/* LISTA DE CHAMADAS MEDHOME */
+
+.home_med{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    background: rgba(0, 0, 0, 0.4); /* Adiciona a cor de fundo ao card */
+}
+.home-text_med{
+    max-width: 37rem;
+}
+.home-text_med .text-h4_med{
+    font-size: 1.5rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.home-text_med .text-h1_med{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    color: #fff;
+}
+.home-text_med p{
+    margin-bottom: 4rem;
+}
+.home-btn_med{
+    padding: 15px 45px;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.home-btn_med:hover{
+    background: #fc4c35;
+}
+.home-img_med img{
+    width: 600px;
+}
+
+.contrata-btn_med{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 16px 0;
+    background: #0066ff;
+    transition: background 0.5s;
+}
+
+.contrata-btn_med:hover{
+    background: #0040a1;
+}
+
+
+@media (max-width:785px) {
+
+    .home-img_med img{
+        width: 450px;
+    }
+
+    .home_med{
+        height: 100vh;
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+
+    }
+    .home_med .text-h4_med{
+        font-size: 15px;
+    }
+    .home_med .text-h1_med{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .hom_med p{
+        font-size: 15px;
+    }
+    .home-img_med{
+        width: 125%;
+    }
+}
+
+/* FIM LISTA DE CHAMADAS */
+
+
+
+
+
+
+/* EDITANDO LIST DA PAGINA CONTRATAR E ADMLISTA */
+.container-contrata{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4); /* Adiciona a cor de fundo ao card */
+
+    margin-bottom: 200px;
+
+}
+
+.card-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 32px;
+}
+
+.card-container a{
+    text-decoration: none;
+}
+
+.card-container .box-contratar{
+    position: relative;
+    width: 400px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.8); /* Adicionando transparência com a propriedade rgba() */
+    cursor: pointer;
+    
+}
+
+@media only screen and (max-width: 786px){
+    .card-container .box-contratar{
+        width: 350px;
+    }
+}
+
+
+.card-container .box-contratar::before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: var(--clr);
+    transition: 0.5s ease-in-out;
+   
+}
+
+.card-container .box-contratar:hover::before{
+    width: 100%;
+}
+
+.card-container .box-contratar .content-contratar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.card-container .box-contratar .content-contratar .icon-contratar{
+    position: relative;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container .box-contratar .content-contratar .icon-contratar i{
+    font-size: 2.5em;
+    color: var(--clr);
+    transition: 0.5s ease-in-out;
+}
+
+.card-container .box-contratar:hover .content-contratar .icon-contratar i{
+color: #fff;
+}
+
+.card-container .box-contratar .content-contratar .text-contratar h3{
+    font-weight: 500;
+    color: var(--clr);
+    transition: 0.5s ease-in-out;
+}
+
+.card-container .box-contratar .content-contratar .text-contratar p{
+    font-size: 0.9em;
+    color: #686868;
+    transition: 0.5s ease-in-out;
+}
+
+.card-container .box-contratar:hover .content-contratar .text-contratar h3,
+.card-container .box-contratar:hover .content-contratar .text-contratar p{
+    color: #fff;
+}
+
+/* FIM LIST PAGINA CONTRATAR E ADMLISTA */
+
+
+
+/* CONFIGURAÇÃO PACHOME */
+
+.container_pac{
+    background-color: #efefef;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.container_texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pac_texto{
+    font-family: 'Roboto Slab', serif;
+    max-width: 60%;
+}
+
+.container_texto h1{
+    text-align: center;
+    font-size: 1.9rem;
+    color: #414141;
+}
+
+.container_texto p{
+    text-align: justify;
+    font-size: 1.0rem;
+    color: #5b5b5b;
+}
+
+@media only screen and (max-width: 786px){
+
+    .container_pac{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .pac_texto {
+        max-width: 85%;
+    }
+
+    .container_texto h1 {
+        font-size: 1.8rem;
+    }
+
+    .container_texto p {
+        text-align: justify;
+        font-size: 1.0rem;
+        
+    }
+}
+
+/* carousel */
+
+.carousel {
+    background: #b9d3ff;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.gallery {
+    background: #b9d3ff;
+}
+
+.gallery-cell {
+    border-radius: 10px;
+}
+
+.gallery-cell a img {
+    border-radius: 10px;
+}
+
+.gallery-cell1,
+.gallery-cell2,
+.gallery-cell3 {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    counter-increment: gallery-cell;
+    border-radius: 10px;
+    background-size: contain; /* Alterando para 'contain' */
+    background-position: center; /* Centralizando a imagem */
+}
+
+.gallery-cell1 {
+    background-image: url(../imagem/carousel/carousel1.jpeg);
+}
+
+.gallery-cell2 {
+    background-image: url(../imagem/carousel/carousel2.jpeg);
+}
+
+.gallery-cell3 {
+    background-image: url(../imagem/carousel/carousel3.jpeg);
+}
+
+@media only screen and (max-width: 786px) {
+    .gallery-cell1 {
+        background-image: url(../imagem/carousel/carou1_redimen.jpeg);
+        width: 100%;
+    }
+
+    .gallery-cell2 {
+        width: 100%;
+        background-image: url(../imagem/carousel/carou2_redimen.jpeg);
+    }
+
+    .gallery-cell3 {
+        width: 100%;
+        background-image: url(../imagem/carousel/carou3_redimen.jpeg);
+    }
+}
+
+
+
+/* Fim carousel */
+
+
+/* INFORMAÇÕES TELEFONE HORARIOS E LOCALIZAÇÃO */
+.container_horaroios{
+    background-color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+
+}
+
+.container_horaroios h1{
+    text-align: justify;
+    font-size: 35px;
+    color: #414141;
+    margin-bottom: 10px;
+
+}
+
+.container_horaroios h3{
+    text-align: justify;
+    font-size: 1.0rem;
+    color: #5b5b5b;
+    margin-bottom: 6px;
+}
+
+.telefone {
+    margin-left: 30%;
+    padding-top: 50px;
+}
+
+.mapa{
+    background-color: #ffffff;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+@media only screen and (max-width: 786px){
+    .mapa{
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .mapa iframe{
+        height: 200px;
+
+    }
+}
+
+@media only screen and (max-width: 786px){
+    .telefone{
+        margin-left: 20%;
+    }
+
+    .container_horaroios h1 {
+        font-size: 25px;
+    }
+
+    .container_horaroios h3 {
+        font-size: 1.0rem;
+    }
+}
+
+
+/* FIM INFORMAÇÕES TELEFONE HORARIOS E LOCALIZAÇÃO */
+
+
+/* CONVENIOS HOMEPAC */
+
+.h1_convenio{
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #414141;;
+    background: #b9d3ff;
+  }
+  
+  @media (max-width: 720px) {
+    .h1_convenio{ font-size: 17px; }
+  }
+  
+  @media (max-width: 320px) { /* responsivo celular */
+    .h1_convenio{ font-size: 15px; }
+  }
+  
+  .container_convenio{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+  }
+
+  @media (max-width: 720px) {
+    .container_pac{ margin-bottom: -30px; /* sobe o foter para proximo do container_pac */ }
+  }
+  
+  .image-container {
+    overflow-x: hidden;
+    max-width: 668px;
+  }
+  .image-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - (1.5rem * (var(--per-view) - 1))) / var(--per-view));
+    grid-gap: 1.5rem;
+    position: relative;
+    left: 0;
+    transition: .3s;
+  }
+  .image-wrapper > * {
+    aspect-ratio: 4 / 3;
+  }
+  .img_par {
+  
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    display: block;
+    border-radius: .5rem;
+  }
+
+/* FIM CONVENIOS HOMEPAC */
+
+
+
+/* FOOTER PAGPACHOME */
+
+footer{
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-container h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-container p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+   margin: 0 10px; 
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+
+}
+
+/* FIM FOOTER */
+
+
+/* TRABALHE CONOSCO */
+
+
+
+.home_trab{
+
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    background: rgba(0, 0, 0, 0.4); /* Adiciona a cor de fundo ao card */
+}
+.home-text_trab{
+    max-width: 37rem;
+}
+.home-text_trab .text-h4_trab{
+    font-size: 1.5rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.home-text_trab .text-h1_trab{
+    font-size: 3.0rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    color: #fff;
+}
+.home-text_trab p{
+    margin-bottom: 4rem;
+}
+
+.home-img_trab img{
+    width: 500px;
+}
+
+
+@media (max-width:785px) {
+
+    .home_trab{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 0rem;
+    }
+    .home_trab .text-h4_trab{
+        font-size: 15px;
+    }
+    .home_trab .text-h1_trab{
+        font-size: 2.0rem;
+        line-height: 3rem;
+    }
+    .home_trab p{
+        font-size: 15px;
+    }
+    .home-img_trab{
+        width: 125%;
+    }
+}
+
+/* FIM TRABALHE CONOSCO */
+
+
+
+/* FIM CONFIGURAÇÃO PACHOME */
+
+
+/* CONFIGURAÇÃO CHAMADA TELÃO */
+
+.container_telao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b9d3ff;
+    height: 70vh; /* A altura da div ocupará 100% da altura da tela */
+    width: 100%; /* A largura da div ocupará 100% da largura da tela */
+}
+
+.primeira_chamada{
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* edição do texto */
+.paciente_telao{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+.nome_paciente {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 90px;
+    color: #ff0000;
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0%, 100% {
+        color: #ff0000; /* Vermelho */
+    }
+    50% {
+        color: #000000; /* Preto */
+    }
+}
+
+.sala_informacao{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.sala_medico{
+    color: #ff0000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 90px;
+}
+
+/* FIM CSS CHAMADA TELÃO */

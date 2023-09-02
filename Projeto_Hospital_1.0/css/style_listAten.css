@@ -1,0 +1,174 @@
+body{
+    background: url("../imagem/fundo_adm_overlay.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+.pag_pac{
+    background: url("../imagem/fundo_pac.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+/* EDIÇÃO DO FORMULARIO */
+.table-bg{
+    
+    background: rgba(0, 0, 0, 0.4); /* Adiciona a cor de fundo ao card */
+    border-radius: 15px 15px 0 0;
+}
+
+.box-search{
+    display: flex;
+    justify-content: center;
+    gap: .1%;
+}
+
+.text-white{
+    font-size: 13px;
+}
+
+/* FIM EDIÇÃO DO FORMULARIO */
+
+/* EDITANDO BOTÃO VOLTAR E RADIO ATIVO E NÃO ATIVO */
+
+    .container_radio_label {
+        background: rgba(0, 0, 0, 0.7);
+        margin: 0 auto;
+        margin-left: 300px ;
+        margin-right: 300px ;
+        text-align: center;
+        padding: 0.2rem; /* Ajuste o valor do padding */
+        border-radius: 10px;
+    }
+
+
+    .pag_atendente{
+        background: url("../imagem/imagem_fundo_atendente.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .radio_label {
+        display: inline-block;
+        margin-left: 300px ;
+        margin: 0 5px; /* Ajuste as margens conforme necessário */
+        padding: 5px; /* Ajuste o espaçamento interno */
+    }
+    
+
+    .box-search {
+
+        margin-top: 20px; /* Adicione um espaçamento entre o .container_radio_label e .box-search */
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EDIÇÃO LISTA MED */
+
+.btn_voltar_med{
+    padding: 0.5rem 2rem;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 16px 0;
+    background: #0066ff;
+    transition: background 0.5s;
+}
+
+.btn_voltar_med:hover{
+    background: #0040a1;
+}
+
+.btn_med{
+    padding: 0.5rem;
+    border-color:#0066ff ;
+    background: #0066ff;
+}
+
+.btn_med:hover{
+    border-color:#0040a1;
+    background: #0040a1;
+}
+
+.btn_altera_med{
+    background: #0066ff;
+    border-color:#0066ff ;
+}
+
+.btn_altera_med:hover{
+    background: #0040a1;
+    border-color:#0040a1;
+}
+
+/* FIM EDIÇÃO LISTA MED */
+
+
+/* EDIÇÃO LISTA ATENDENTE */
+
+.btn_voltar_aten{
+    padding: 0.5rem 2rem;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 16px 0;
+    background: #ff575d;
+    transition: background 0.5s;
+}
+
+.btn_voltar_aten:hover{
+    background: #ad363a;
+}
+
+.btn_aten{
+    padding: 0.5rem;
+    border-color:#ff575d ;
+    background: #ff575d;
+}
+
+.btn_aten:hover{
+    border-color:#ad363a;
+    background: #ad363a;
+}
+
+
+.btn_altera_aten{
+    border-color:#ff575d ;
+    background: #ff575d;
+}
+
+.btn_altera_aten:hover{
+    border-color:#ad363a;
+    background: #ad363a;
+}
+
+/* FIM EDIÇÃO LISTA ATENDENTE */
+
+
+
+
+
+/* FIM BOTÃO VOLTAR E ATIVO NÃO ATIVO */
